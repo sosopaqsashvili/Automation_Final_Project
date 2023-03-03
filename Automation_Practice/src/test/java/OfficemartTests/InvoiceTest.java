@@ -108,7 +108,7 @@ public class InvoiceTest extends  ChromeRunner  implements InvoicePage, InvoiceO
     @Description("Test Case 29 Check Code Fieled Value Format With Eleven Number ")
     public void CheckCodeFieldFormatNumb() {
         steps.ClearAllFields()
-                .InputCodeFormat(ElevenNumbers)
+                .InputCodeFormat(SevenNumbers)
                 .ClickSendBtn();
         Assert.assertNotEquals(steps.GetCodeFieldColor(), "rgb(255, 0, 0)");
     }
@@ -169,7 +169,7 @@ public class InvoiceTest extends  ChromeRunner  implements InvoicePage, InvoiceO
     @Description("Test Case 36 Check Information Field  With More Than Five Symbol ")
     public void CheckInformationFildMoreSymb() {
         steps.ClearAllFields()
-                .InputInformation(FiveSymbol)
+                .InputInformation(FoureSymbol)
                 .ClickSendBtn();
         sleep(200);
         Assert.assertNotEquals(steps.GetInformationFieldColor(), "rgb(255, 0, 0)");

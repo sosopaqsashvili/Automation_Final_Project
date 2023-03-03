@@ -3,16 +3,16 @@ public interface InvoiceObject {
     String
             TestName = "Test",
             StringText = "Test",
-            LessNumbers = "12345678",
-            MoreNumbers = "123456789123",
-            ElevenNumbers = "01234567891",
+            LessNumbers = "12345",
+            MoreNumbers = "12345678",
+            SevenNumbers = "01234567",
             TestAddress = "Test Address",
             LessNumb = "123",
             NineNumber = "123456789",
-            FiveSymbol = "12345",
-            ValidEmail = "test@gmail.com",
-            InvalidEmail = "test.gmail.com",
-            AnotherInvalidEmail = "test@gmail",
-            OtherInvalidEmail = "test.gmail@";
+            FoureSymbol = "1234",
+            ValidEmail = "fildtest@gmail.com",
+            InvalidEmail = "fildtest.gmail.com",
+            AnotherInvalidEmail = "fildtest@gmail",
+            OtherInvalidEmail = "fildtest.gmail@";
 }
 
