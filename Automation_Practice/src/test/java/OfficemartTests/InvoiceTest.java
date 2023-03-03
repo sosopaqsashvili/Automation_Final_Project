@@ -91,7 +91,7 @@ public class InvoiceTest extends  ChromeRunner  implements InvoicePage, InvoiceO
     @Description("Test Case 27 Check Code Fieled Value Format With Less Number ")
     public void CheckCodeFieldFormatLessNumb() {
         steps.ClearAllFields()
-                .InputCodeFormat(LessNumbers)
+                .InputCodeFormat(SaveNumbers)
                 .ClickSendBtn();
         Assert.assertEquals(steps.GetCodeFieldColor(), "rgb(255, 0, 0)");
     }
@@ -108,7 +108,7 @@ public class InvoiceTest extends  ChromeRunner  implements InvoicePage, InvoiceO
     @Description("Test Case 29 Check Code Fieled Value Format With Eleven Number ")
     public void CheckCodeFieldFormatNumb() {
         steps.ClearAllFields()
-                .InputCodeFormat(SevenNumbers)
+                .InputCodeFormat(SaveNumbers1)
                 .ClickSendBtn();
         Assert.assertNotEquals(steps.GetCodeFieldColor(), "rgb(255, 0, 0)");
     }
@@ -151,7 +151,7 @@ public class InvoiceTest extends  ChromeRunner  implements InvoicePage, InvoiceO
     @Description("Test Case 34 Check Contact Number Value With Correct Format ")
     public void CheckPhoneNumbCorrectFormat() {
         steps.ClearAllFields()
-                .PhoneInput(NineNumber)
+                .PhoneInput(SaveNumbers3)
                 .ClickSendBtn();
         Assert.assertNotEquals(steps.GetPhoneFieldColor(), "rgb(255, 0, 0)");
     }
@@ -169,7 +169,7 @@ public class InvoiceTest extends  ChromeRunner  implements InvoicePage, InvoiceO
     @Description("Test Case 36 Check Information Field  With More Than Five Symbol ")
     public void CheckInformationFildMoreSymb() {
         steps.ClearAllFields()
-                .InputInformation(FoureSymbol)
+                .InputInformation(FoureNamber)
                 .ClickSendBtn();
         sleep(200);
         Assert.assertNotEquals(steps.GetInformationFieldColor(), "rgb(255, 0, 0)");
