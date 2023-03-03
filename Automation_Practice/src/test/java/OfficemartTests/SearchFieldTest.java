@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import static DataObject.SearchButtonObject.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
-public class AddBasketTest extends ChromeRunner implements SearchFiledPage {
+public class SearchFieldTest extends ChromeRunner implements SearchFiledPage {
     SearchFiledPageSteps steps = new SearchFiledPageSteps();
     @Test
     @Description("Test Case 4 Add Product to the basket ")
